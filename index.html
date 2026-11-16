@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WOLFSTORE — Toko Komponen & Rakit PC</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" data-page="beranda">
+      <span class="brand-mark">W</span>
+      <span>WOLF<span class="blue">STORE</span><small>TOKO PC & KOMPONEN</small></span>
+    </a>
+
+    <div class="side-label">MENU UTAMA</div>
+    <button class="nav-item active" data-page="beranda"><span>⌂</span> Beranda</button>
+    <button class="nav-item" data-page="katalog"><span>▦</span> Katalog Komponen</button>
+    <button class="nav-item" data-page="rakit"><span>⚙</span> Rakit PC Sendiri</button>
+    <button class="nav-item" data-page="paket"><span>▣</span> Paket PC Gaming</button>
+    <button class="nav-item" data-page="keranjang"><span>🛒</span> Keranjang <b id="sideCount">0</b></button>
+
+    <div class="side-label">LAINNYA</div>
+    <button class="nav-item" data-page="tentang"><span>ⓘ</span> Tentang Wolfstore</button>
+    <button class="nav-item" data-page="kontak"><span>☎</span> Hubungi Kami</button>
+
+    <div class="sidebar-bottom">
+      <div class="status-dot"></div>
+      <span>Beroperasi di Bandar Lampung</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobileMenu">☰</button>
+      <div class="breadcrumb">WOLFSTORE <span>/</span> <b id="crumb">Beranda</b></div>
+
+      <div class="top-actions">
+        <button class="icon-btn" data-page="keranjang">🛒 <i id="topCount">0</i></button>
+        <a class="top-wa" target="_blank" href="https://wa.me/6283134862681">WhatsApp ↗</a>
+      </div>
+    </header>
+
+    <div class="content" id="content"></div>
+
+    <footer>© 2026 WOLFSTORE · Toko Komponen & Jasa Rakit PC · Bandar Lampung</footer>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
